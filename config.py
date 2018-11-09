@@ -13,6 +13,7 @@ class Config:
     FLASK_MAIL_SENDER = 'Unis Admin <wangyouyu6@163.com>'
     FLASK_ADMIN = os.environ.get('FLASK_ADMIN', 'wangyy@thunis.com')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    FLASK_POSTS_PER_PAGE = 20
 
 
     @staticmethod
