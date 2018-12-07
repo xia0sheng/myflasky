@@ -10,10 +10,11 @@ class Config:
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'wangyouyu6')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'Wangyouyu')
     FLASKY_MAIL_SUBJECT_PREFIX = '[UNIS]'
-    FLASK_MAIL_SENDER = 'Unis Admin <wangyouyu6@163.com>'
-    FLASK_ADMIN = os.environ.get('FLASK_ADMIN', 'wangyy@thunis.com')
+    FLASKY_MAIL_SENDER = 'Unis Admin <wangyouyu6@163.com>'
+    FLASKY_ADMIN = os.environ.get('FLASK_ADMIN', 'wangyy@thunis.com')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    FLASK_POSTS_PER_PAGE = 20
+    FLASKY_POSTS_PER_PAGE = 20
+    FLASKY_COMMENTS_PER_PAGE = 50
 
 
     @staticmethod

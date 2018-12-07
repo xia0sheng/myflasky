@@ -45,3 +45,10 @@ class EditProfileAdminForm(FlaskForm):
 class PostForm(FlaskForm):
     body = PageDownField('正文', validators=[DataRequired()])
     submit = SubmitField('提交')
+
+
+class CommentForm(FlaskForm):
+    body = StringField('Enter your comment', validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+
